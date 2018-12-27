@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Przelicznik</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <style>
+
+        body {
+            background-image: url('field.jpg');
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+        }
+        p{
+            color: antiquewhite;
+            font-weight: bold;
+        }
+        
+
+        span {
+            display: block;
+            margin-top: 20px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            
+        }
+        div{
+            display: block;
+            height: 100px;
+            padding: 10px;
+            
+        }
+        button {
+            background-color: orange;
+            border-radius: 10px;
+            font-weight: bold;
+           
+        }
+        section {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 139, 139, 0.3);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 5px 5px rgb(39, 39, 39);
+
+        }
+        @media only screen and (max-width: 1000px) {
+            body {
+                background-image: url('vertical.jpg');
+                background-position: center;
+            }
+        }
+      
+
+        
+        
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <p>Przelicz Kilometry na Mile</p>
+            <form action="" id="formKm">
+                <input type="text" id="km"> <button>Przelicz !</button>
+            </form>
+            <span id="spanKm"></span>
+        </div>
+        <div>
+            <p>Przelicz Mile na Kilometry</p>
+            <form action="" id="formMiles">
+                <input type="text" id="miles"> <button>Przelicz !</button>
+            </form>
+            <span id="spanMiles"></span>
+        </div>
+        <div>
+            <p>Przelicz Kilogramy na Stones</p>
+            <form action="" id="formKg">
+                <input type="text" id="kg"> <button>Przelicz !</button>
+            </form>
+            <span id="spanKg"></span>
+        </div>
+        <div>
+            <p>Przelicz Stones na Kilogramy</p>
+            <form action="" id="formSt">
+                <input type="text" id="st"> <button>Przelicz !</button>
+            </form>
+            <span id="spanSt"></span>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
